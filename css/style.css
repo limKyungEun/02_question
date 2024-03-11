@@ -30,9 +30,9 @@ header{
     background-color: #eeeeee;
 }
 
-.bodywrap{/*근데 이걸 bodywrap말고 section으로 쓰면 안되나??*/
+.bodywrap{/*슬라이드와 컨텐츠 묶음*//*근데 이걸 bodywrap말고 section으로 쓰면 안되나??*/
      float: right;
-     height: 550px;
+     height: 550px;/*슬라이드 높이 + 컨텐츠 높이*/
      width: 800px;
 }
 
@@ -41,9 +41,9 @@ header{
     width: 800px;
 }
 
-.contents{
+.contents{/*tabmenu랑 otherwrap묶음*/
     float: right;
-    height: 200px;
+    height: 200px;/*탭메뉴, 배너, 바로가기 높이*/
     width: 800px;
 }
 

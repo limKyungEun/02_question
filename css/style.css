@@ -1,1 +1,20 @@
-﻿
+﻿@charset "utf-8";
+
+*{/*전체에게*/
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;/*기본값으로 지정되어 있는 목록스타일이 나타나지 않도록 지정*/
+    font-family: "맑은 고딕";
+    color: #222328;
+}
+
+body{
+    width: 1000px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;/*기본값으로 a태그에 지정되어 있는 밑줄이 나타나지 않도록 지정*/
+    display: block/*a요소와 img요소는 inline요소이기 때문에 바꿔줌*/
+}

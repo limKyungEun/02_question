@@ -18,3 +18,44 @@ a{
     text-decoration: none;/*기본값으로 a태그에 지정되어 있는 밑줄이 나타나지 않도록 지정*/
     display: block/*a요소와 img요소는 inline요소이기 때문에 바꿔줌*/
 }
+
+header{
+    float: left;/*와이어프레임 조건에 맞춰 로고와 메뉴는 왼쪽에 배치*/
+}
+
+.top{/*로고와 메뉴 묶음*/
+    float: left;
+    height: 650px;
+    width: 200px;
+    background-color: #eeeeee;
+}
+
+.bodywrap{/*근데 이걸 bodywrap말고 section으로 쓰면 안되나??*/
+     float: right;
+     height: 550px;
+     width: 800px;
+}
+
+.imgslide{
+    height: 350px;
+    width: 800px;
+}
+
+.contents{
+    float: right;
+    height: 200px;
+    width: 800px;
+}
+
+footer{
+    float: right;
+    height: 100px;
+    width: 800px;
+}
+
+.bottom{
+    float: left;
+    height: 100px;
+    width: 800px;
+    background-color: #cccccc;
+}

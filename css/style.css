@@ -148,6 +148,7 @@ header{
     float: right;
     height: 200px;/*탭메뉴, 배너, 바로가기 높이*/
     width: 800px;
+    position: absolute;
 }
 
 .tabmenu{/*공지사항, 갤러리*/
@@ -222,6 +223,22 @@ header{
 
 .notice li:hover{
     font-weight: bold;
+}
+
+.gallery li{
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.gallery img{
+    height: 90px;
+    width: 70px;
+    padding: 10px;
+}
+
+.gallery{
+    opacity: 0.5;/*투명도*/
 }
 
 .otherwrap{/*배너와 바로가기 묶음*/

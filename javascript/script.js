@@ -29,11 +29,12 @@ jQuery(document).ready(function(){
         
     }
 
+    //공지사항, 갤러리 탭 전환 기능
     $(function(){
-        $('.tabmenu>li>a').click(function(){
-            $(this).parent().addClass('active').
-            siblings().removeClass('active');
-                return false;
+        $('.tabmenu>li>a').click(function(){//<a href="#">공지사항</a> 이 부분을 클릭하면
+            $(this).parent().addClass('active').//현재요소의 부모 요소를 찾아(li) 'active'클래스를 추가
+            siblings().removeClass('active');//다른 형제요소를 찾은 후 'active'클래스 삭제
+                return false;//클릭이벤트 처리를 중단하고 함수를 호출한 곳으로 즉시 돌아감..어렵노
         });
     });
 });

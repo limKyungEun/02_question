@@ -77,7 +77,7 @@ header{
 }
 
 .shortcut{
-    float: right;/*아더랩 안에서 왼*/
+    float: right;/*아더랩 안에서 오*/
     height: 200px;
     width: 200px;
 }
@@ -88,9 +88,31 @@ footer{
     width: 800px;
 }
 
-.bottom{
+.bottom{/*btlogo와 site 묶음*/
     float: left;
     height: 100px;
     width: 800px;
     background-color: #cccccc;
+}
+
+.btlogo{
+    float: left;/*푸터안에서 왼*/
+    height: 100px;
+    width: 200px;
+}
+
+.site{/*btmenu, copy 묶음*/
+    float: right;
+    height: 100px;
+    width: 600px;
+}
+
+.btmenu{
+    height: 50px;/*site의 height 2/1*/
+    width: 600px;
+}
+
+.copy{
+    height: 50px;/*site의 height 2/1*/
+    width: 600px;
 }

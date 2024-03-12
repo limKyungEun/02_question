@@ -148,6 +148,7 @@ header{
     float: right;
     height: 200px;/*탭메뉴, 배너, 바로가기 높이*/
     width: 800px;
+    /*800왼쪽부터 = (탭메뉴 왼쪽여백 5)+(탭메뉴 너비 290)+(남은 여백 5)+(배너 너비 295)+(남은 여백 5)+(바로가기 너비 200) */
     position: absolute;
 }
 
@@ -247,14 +248,19 @@ header{
 
 .otherwrap{/*배너와 바로가기 묶음*/
     float: right;/*컨텐츠 안에서 오른쪽*/
-    height: 200px;
+    height: 180px;
     width: 500px;
 }
 
 .banner{
     float: left;/*아더랩 안에서 왼*/
-    height: 200px;
-    width: 300px;
+    height: 180px;
+    width: 295px;
+    margin: 10px 0;
+}
+
+.banner img{
+    float: left;/*배너안에서*/
 }
 
 .shortcut{

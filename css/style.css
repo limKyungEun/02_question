@@ -30,6 +30,17 @@ header{
     background-color: #eeeeee;
 }
 
+.logo{
+    float: left;
+    height: 40px;
+    width: 200px;
+    margin: 30px 0 30px 0;
+}
+
+.menu{
+    width: 180px;
+}
+
 .bodywrap{/*슬라이드와 컨텐츠 묶음*//*근데 이걸 bodywrap말고 section으로 쓰면 안되나??*/
      float: right;
      height: 550px;/*슬라이드 높이 + 컨텐츠 높이*/

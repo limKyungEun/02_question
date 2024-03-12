@@ -34,7 +34,7 @@ header{
     float: left;
     height: 40px;
     width: 200px;
-    margin: 30px 0 30px 0;
+    margin: 30px 0 30px 0;/*로고 위아래 마진*/
 }
 
 .menu{
@@ -56,6 +56,30 @@ header{
     float: right;
     height: 200px;/*탭메뉴, 배너, 바로가기 높이*/
     width: 800px;
+}
+
+.tabmenu{/*공지사항, 갤러리*/
+    float: left;/*컨텐츠 안에서 왼쪽*/
+    height: 200px;
+    width: 300px;
+}
+
+.otherwrap{
+    float: right;/*컨텐츠 안에서 오른쪽*/
+    height: 200px;
+    width: 500px;
+}
+
+.banner{
+    float: left;/*아더랩 안에서 왼*/
+    height: 200px;
+    width: 300px;
+}
+
+.shortcut{
+    float: right;/*아더랩 안에서 왼*/
+    height: 200px;
+    width: 200px;
 }
 
 footer{

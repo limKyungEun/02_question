@@ -107,6 +107,41 @@ header{
 .imgslide{
     height: 350px;
     width: 800px;
+    position: relative;
+}
+
+.imgslide>a{/*각 이미지와 이미지텍스트 묶음*/
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;/*포지션을 0 0으로 줬으므로 3개의 a 태그가 같은 위치에 곂쳐 있다*/
+    overflow: hidden;/*이미지가 지정된 영역의 벗어나면 밖으로 넘치는 부분은 보이지 않도록 지정*//*슬라이드를 만드는 경우는 거의 이 속성을 사용해야한다*/
+    transition: all 3s;/*애니메이션 속도 3초로 지정*/
+}
+
+.imgtext{
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    margin: -25px 0 0 -150px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40,40,40,0.3);
+    left: 50%;
+    top: 50%;
+     /*
+        부모요소에 position:relative를 주고
+        자식요소에 position:absolute를 적용한 후
+
+        margin-top : height의 1/2 음수값(-);,
+        margin-left : width의 1/2 음수값(-); ex) margin: -25px 0 0 -150px;
+        left: 50%;
+        top: 50%;
+
+        이 조합으로 준다면 수평, 수직으로 동시에 가운데 정렬을 할 수 있다
+    */
 }
 
 .contents{/*tabmenu랑 otherwrap묶음*/

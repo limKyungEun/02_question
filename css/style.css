@@ -235,10 +235,14 @@ header{
     height: 90px;
     width: 70px;
     padding: 10px;
+    opacity: 0.5;/*투명도*/
 }
 
-.gallery{
-    opacity: 0.5;/*투명도*/
+.gallery img:hover{
+    transition: all 0.5s;
+    opacity: 1;
+    width: 80px;
+    height: 100px;
 }
 
 .otherwrap{/*배너와 바로가기 묶음*/

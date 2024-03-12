@@ -28,4 +28,12 @@ jQuery(document).ready(function(){
         },4000);//4초
         
     }
+
+    $(function(){
+        $('.tabmenu>li>a').click(function(){
+            $(this).parent().addClass('active').
+            siblings().removeClass('active');
+                return false;
+        });
+    });
 });

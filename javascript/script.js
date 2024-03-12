@@ -22,9 +22,10 @@ jQuery(document).ready(function(){
 
         setInterval(function(){
             now = now == imgs?0:now+=1;//조건문 now랑 imgs값을 비교 참이면 now값을 0으로 변경, 거짓이면 now값을 1증가
-            $('.imgslide>a').eq(now-1).animate({width:"-800px"});
+            $('.imgslide>a').eq(now-1).animate
+            ({width:"-800px"});
             $('.imgslide>a').eq(now).animate({width:"800px"});
-        },5000);//5초
+        },4000);//4초
         
     }
 });

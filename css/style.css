@@ -152,11 +152,79 @@ header{
 
 .tabmenu{/*공지사항, 갤러리*/
     float: left;/*컨텐츠 안에서 왼쪽*/
-    height: 200px;
-    width: 300px;
+    height: 180px;/*부모 높이와 밑에 있는 마진을 계산해서 20을 뺸 180으로 지정*/
+    width: 290px;/*부모 너비와 밑에 있는 마진left:5px을 주었고 이후 속성에서 오른쪽이 5px이 남도록 지정할거기 때문에 10을 뺀 290으로 지정 */
+    margin: 10px 0 10px 5px;
+    position: relative;
 }
 
-.otherwrap{
+.tabmenu>li{/*공지사항과 갤러리가 쓰여있는 타이틀 박스 영역*/
+    float: left;
+    width: 80px;
+    line-height: 30px;
+}
+
+.tabmenu>li>a{/*공지사항과 갤러리가 쓰여있는 타이틀 text 영역*/
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.tabmenu>li>a:hover{
+    background-color: #eeeeee;
+}
+
+.tabmenu>li:first-child{
+    border-right: none;
+}
+
+.tabmenu>li.active>a{
+    background-color: #fff;
+}
+
+.tabmenu>li div{
+    position: absolute;
+    left: 5px;
+    height: 0;
+    overflow: hidden;
+}
+
+.tabmenu>li.active div{
+    width: 288px;
+    height: 148px;
+    border: 1px solid #ddd;
+    z-index: 1;
+}
+
+.notice ul{
+    float: left;
+    width: 288px;
+    margin: 12px 0 12px 0;
+}
+
+.notice li{
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    margin: 0 10px 0 10px;
+}
+
+.notice li:nth-child(2n){
+    background-color: #ccc;
+}
+
+.notice li span{
+    float: right;
+}
+
+.notice li:hover{
+    font-weight: bold;
+}
+
+.otherwrap{/*배너와 바로가기 묶음*/
     float: right;/*컨텐츠 안에서 오른쪽*/
     height: 200px;
     width: 500px;
